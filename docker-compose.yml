@@ -3,7 +3,9 @@ version: '3.8'
 services:
   postgres:
     image: postgres:15
+    container_name: db
     environment:
+      # Variáveis de ambiente para o PostgreSQL
       POSTGRES_USER: user
       POSTGRES_PASSWORD: password
       POSTGRES_DB: meu_banco
@@ -14,10 +16,17 @@ services:
 
   etl:
     build: .
+    container_name: etl
     depends_on:
       - postgres
     environment:
-      - PYTHONUNBUFFERED=1
+      # Variáveis de ambiente para o ETL
+      DB_NAME: meu_banco
+      DB_USER: user
+      DB_PASSWORD: password
+      DB_HOST: db
+      DB_PORT: 5432
+      PYTHONUNBUFFERED: 1
     volumes:
       - .:/app
     working_dir: /app

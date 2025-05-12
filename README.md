@@ -11,15 +11,15 @@ Este projeto realiza a análise de dados de PIB e população dos estados brasil
 ## Funcionalidades
 
 - **Obtenção de Dados**:
-  - PIB: Obtido via API do IBGE.
-  - População: Arquivo Excel baixado de um link do Google Drive.
+  - PIB: Obtido via API do IBGE no formato **JSON** (semi-estruturados).
+  - População: Arquivo Excel (**tabela - CSV - estruturado**) baixado de um link do Google Drive.
 
 - **Transformação de Dados**:
   - Dados de PIB e população são processados para incluir apenas os anos e estados relevantes.
   - Cálculo do PIB per capita com base nos dados de PIB e população.
 
 - **Armazenamento de Dados**:
-  - Os dados são carregados em tabelas no banco de dados PostgreSQL:
+  - Os dados são armazenados em tabelas no banco de dados PostgreSQL:
     - `tabela_pib`: Dados de PIB.
     - `tabela_pop`: Dados de população.
     - `tabela_pib_per_capta`: Dados de PIB per capita.

@@ -8,7 +8,7 @@ services:
       # Variáveis de ambiente para o PostgreSQL
       POSTGRES_USER: user
       POSTGRES_PASSWORD: password
-      POSTGRES_DB: meu_banco
+      POSTGRES_DB: ibge_pib_populacao
     ports:
       - "5432:5432"
     volumes:
@@ -21,7 +21,7 @@ services:
       - postgres
     environment:
       # Variáveis de ambiente para o ETL
-      DB_NAME: meu_banco
+      DB_NAME: ibge_pib_populacao
       DB_USER: user
       DB_PASSWORD: password
       DB_HOST: db

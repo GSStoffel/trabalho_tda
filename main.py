@@ -117,7 +117,7 @@ def plotar_graficos_pib_per_capta(tabela_pib_per_capta):
     plt.title('Comparação PIB per capta')
     # Plotando
     plt.tight_layout()
-    plt.savefig(f'output/comparação_pib_per_capta.png')
+    plt.savefig(f'output/pib_per_capta/comparação_pib_per_capta.png')
     plt.close()
 
     for sigla in tabela_pib_per_capta['SIGLA']:
@@ -150,7 +150,7 @@ def plotar_graficos_pib_per_capta(tabela_pib_per_capta):
         plt.title('PIB per capita - RS (2022–2025)')
         plt.legend()
         plt.grid(True)
-        plt.savefig(f'output/previsao_pib_per_capta_{sigla}.png')
+        plt.savefig(f'output/previsoes_pib_per_capta_estados/previsao_pib_per_capta_{sigla}.png')
         plt.close()
 
 
@@ -215,7 +215,7 @@ def plotar_graficos_populacao(df_pop):
     plt.title('Comparação da população entre estados')
     # Plotando
     plt.tight_layout()
-    plt.savefig(f'output/comparacao_pop_estados.png')
+    plt.savefig(f'output/populacao_estados/comparacao_pop_estados.png')
     plt.close()
 
     for ano in ULTIMOS_ANOS:
@@ -240,7 +240,7 @@ def plotar_graficos_populacao(df_pop):
 
         # Plotando
         plt.tight_layout()
-        plt.savefig(f'output/comparacao_pop_estados_{ano}.png')
+        plt.savefig(f'output/populacao_estados_ano/comparacao_pop_estados_{ano}.png')
         plt.close()
 
 
@@ -354,7 +354,7 @@ def plotar_graficos_pib(df_pib):
     plt.title('Comparação PIB entre estados')
     # Plotando
     plt.tight_layout()
-    plt.savefig('output/comparacao_pib_estados.png')
+    plt.savefig('output/estados_pib/comparacao_pib_estados.png')
     plt.close()
     #####################
     for ano in ULTIMOS_ANOS:
@@ -379,7 +379,7 @@ def plotar_graficos_pib(df_pib):
 
         # Plotando
         plt.tight_layout()
-        plt.savefig(f'output/comparacao_pib_estados_{ano}.png')
+        plt.savefig(f'output/estados_pib_ano/comparacao_pib_estados_{ano}.png')
         plt.close()
 
 

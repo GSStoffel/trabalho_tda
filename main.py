@@ -12,6 +12,14 @@ import seaborn as sns
 from matplotlib import ticker
 from sklearn.linear_model import LinearRegression
 
+"""
+Autores:
+    Alisson Santos da Silveira
+    Felipe Pereira de Castro
+    Gabriel Sperb Stoffel
+    Karina Murta Starling Hayashi
+"""
+
 ANO_ATUAL = datetime.now().year
 QTD_ANOS = 20
 ULTIMOS_ANOS = [i for i in range(ANO_ATUAL - QTD_ANOS, ANO_ATUAL + 1)]

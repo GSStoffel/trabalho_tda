@@ -1,3 +1,9 @@
+# Autores
+- Alisson Santos da Silveira
+- Felipe Pereira de Castro
+- Gabriel Sperb Stoffel
+- Karina Murta Starling Hayashi
+
 # Projeto de Análise de PIB e População por Estado
 
 Este projeto realiza a análise de dados de PIB e população dos estados brasileiros, gerando gráficos comparativos e previsões de PIB per capita. Os dados são obtidos de fontes externas, transformados e armazenados em um banco de dados PostgreSQL.

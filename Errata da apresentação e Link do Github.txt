@@ -1,0 +1,9 @@
+Errata da apresentação e Link do Github
+
+No final da apresentação foi citado que a projeção de PIB per capta para os anos de 2022, 2023 e 2024 e 2025, por meio do scipt de machine learning, foi feita somente para o estado do RS.
+Correção: essa projeção de machine learning foi feita individualmente para todos os estados.
+
+
+Link do GitHub:
+
+https://github.com/GSStoffel/trabalho_tda

@@ -147,7 +147,7 @@ def plotar_graficos_pib_per_capta(tabela_pib_per_capta):
         plt.gca().xaxis.set_major_locator(ticker.MaxNLocator(integer=True))
         plt.xlabel('Ano')
         plt.ylabel('PIB per capita')
-        plt.title('PIB per capita - RS (2022–2025)')
+        plt.title(f'PIB per capita - {sigla} (2022–2025)')
         plt.legend()
         plt.grid(True)
         plt.savefig(f'output/previsoes_pib_per_capta_estados/previsao_pib_per_capta_{sigla}.png')
